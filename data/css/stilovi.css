@@ -1,0 +1,876 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    
+}
+
+.navigation {
+    grid-area: nav;
+    background-color: black;
+    padding: 8px;
+    font-family: 'Cousine', monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navigation a {
+    padding: 30px;
+    color: white;
+    font-size: 12px;
+}
+
+a:link {
+    text-decoration: line-through;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: grey;
+}
+
+
+a:hover {
+    text-decoration: none;
+
+}
+
+.bar {
+    grid-area: bar;
+    padding-top: 40px;
+    margin-bottom: 0;
+    margin-bottom: 0;
+    background-color: #f0f2f1;
+    height: 30px;
+    opacity: 0.7;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: auto auto 1fr auto / 1fr;
+    grid-template-areas: 
+    "nav"
+    "bar"
+    "con"
+    "foo";
+
+}
+.content {
+    height: 100%;
+
+}
+
+.footer {
+    grid-area: foo;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 3%;
+}
+
+.soundHide {
+    display: none;
+}
+
+.soundcloud {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.soundcloud:hover {
+    color: rgb(56, 228, 33);
+}
+
+
+
+/***********************************PROJECT **********************************/
+.content-project {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: auto auto auto auto / auto 45%;
+    
+    grid-template-areas:
+    "wbc wbc" 
+    "prvi logo"
+    "kombi logo"
+    "drugi logo";
+}
+
+
+.paragraf-prvi {
+    display: block;
+    margin-top: 8%;
+    margin-left: 2.5%;
+    padding-bottom: 0;
+    height: 70%;
+    max-width: 70%;
+    width: 70%;
+}
+
+
+.paragraf-prvi p {
+    grid-area: prvi;
+    line-height: 25px;
+    padding-top: 10px;
+    display: block;
+    margin-bottom: 0;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-family: 'Cousine', monospace;
+    font-size: 12px;
+    
+}
+
+
+
+.img-kombi {
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-area: kombi;
+    height: 60%;
+    max-width: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+
+.img-logo-web {
+    grid-area: logo;
+    display: block;
+    padding-bottom: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 90%;
+    max-width: 100%;
+}
+
+.paragraf-drugi  {
+    padding-left: 5%;
+    padding-right: 10%;
+    line-height: 25px;
+    grid-area: drugi;
+    padding-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    font-family: 'Cousine', monospace;
+    font-style: italic;
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+
+.wbrc-div {
+    grid-area: wbc;
+    padding-top: 40px;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-bottom: 0;
+    background-color: #f0f2f1;
+    height: 30px;
+    opacity: 0.7;
+}
+
+
+.wbrc-text {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 2.5%;
+    max-width: 100%;
+    font-family: 'Cousine', monospace;
+    font-size: 15px;
+    
+    
+}
+/***********************************END PROJECT  **********************************/
+
+
+
+/***************************** GALLERY  ****************************/
+
+
+
+.content-gallery {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template: auto / repeat(8, 1fr);
+  margin-bottom: 10%;
+}
+
+.gallery-frame {
+  height: 70px;
+}
+
+.gallery-link:hover {
+  border-radius: 50%;
+}
+
+.gallery-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-image:hover {
+  opacity: 0.9;
+  box-shadow: 10px 10px 15px black;
+}
+/***************************** END GALLERY  ****************************/
+
+
+/***********************************MAPS**********************************/
+
+.content-maps {
+    grid-area: con;
+
+    display: grid;
+    height: 100%;
+    grid-template: 1fr / repeat(4, 1fr);
+    grid-template-areas: 
+    "map1 map2 map3 map4";
+}
+
+
+.image-1 {
+    grid-area: map1;
+    padding: 3%;
+}
+
+.image-2 {
+    grid-area: map2;
+    padding: 3%;
+}
+
+.image-3 {
+    grid-area: map3;
+    padding: 3%;
+}
+
+.image-4 {
+    grid-area: map4;
+    padding: 3%;
+}
+
+.image-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+.image-2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+.image-3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+.image-4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+/***********************************END MAPS  **********************************/
+
+
+/***********************************LINKS**********************************/
+
+.content-links {
+  margin: 5%;
+}
+
+
+.linkovi:link {
+    color: black;
+
+}
+
+.linkovi:hover {
+  text-decoration: none;
+}
+
+.linkovi:visited {
+    color: black;
+}
+
+/***********************************END LINKS  **********************************/
+
+/***********************************SLIDESHOW**********************************/
+.content-print {
+    grid-area: con;
+    display: grid;
+    padding-left: 3%;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    grid-template: 1fr  10% / 25% 25% 50%;
+    grid-template-areas: 
+    "jour slide right"
+    "tag tag tag"; 
+}
+  
+
+
+
+.slideshow-container {
+    grid-area: slide;
+    max-width: 100%;
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+    
+}
+
+.mySlides img {
+  height: 150%;
+  width: 100%;
+
+}
+
+
+  /* Next & previous buttons */
+  .prev, .next {
+    
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+  
+  
+  .naslov {
+  color: white;
+  font-size: 48px;
+  padding: 10% 10%;
+  position: absolute;
+  top: 0;
+  text-shadow: 5px 5px 10px black;
+  }
+  
+  .text-naslov {
+    color: white;
+    font-size: 28px;
+    padding: 15% 10%;
+    position: absolute;
+    top: 0;
+    text-shadow: 5px 5px 10px black;
+  }
+  
+  
+  
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  
+
+
+
+
+
+/***********************************JOURNAL**********************************/
+
+.journal-container {
+  grid-area: jour;
+
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/****************************** MEDIA QUERIES ***********************************/
+
+@media only screen and (max-width: 1200px){
+  .navigation{
+      flex-basis: 100%;
+      flex-direction: column;
+      font-size: 8px;
+      padding: 2px;
+  }
+
+  .navigation a {
+    padding: 15px;
+  }
+
+  .content-project {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr / 1fr;
+  }
+  .paragraf-prvi {
+    display: block;
+    margin-top: 4%;
+    margin-left: 2.5%;
+    padding-bottom: 0;
+    height: 40%;
+    max-width: 70%;
+    width: 70%;
+}
+
+
+.paragraf-prvi p {
+    grid-area: prvi;
+    line-height: 20px;
+    padding-top: 15px;
+    display: block;
+    margin-bottom: 0;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-family: 'Cousine', monospace;
+    font-size: 10px; 
+} 
+
+
+
+.img-kombi {
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-area: kombi;
+  height: 60%;
+  max-width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+
+.img-logo-web {
+  grid-area: logo;
+  display: block;
+  padding-bottom: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 90%;
+  max-width: 100%;
+}
+
+.paragraf-drugi  {
+  padding-left: 5%;
+  padding-right: 10%;
+  line-height: 20px;
+  grid-area: drugi;
+  padding-top: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Cousine', monospace;
+  font-style: italic;
+  font-size: 10px;
+  text-align: justify;
+}
+
+
+
+.wbrc-div {
+  grid-area: wbc;
+  padding-top: 40px;
+  max-width: 100%;
+  margin-bottom: 0;
+  margin-bottom: 0;
+  background-color: #f0f2f1;
+  height: 30px;
+  opacity: 0.7;
+}
+
+
+.wbrc-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 2.5%;
+  max-width: 100%;
+  font-family: 'Cousine', monospace;
+  font-size: 15px;
+  
+  
+}
+
+.content-gallery {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template: auto / repeat(6, 1fr);
+  margin-bottom: 10%;
+}
+
+.gallery-frame {
+  height: 60px;
+}
+
+.gallery-link:hover {
+  border-radius: 50%;
+}
+
+.gallery-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-image:hover {
+  opacity: 0.9;
+  box-shadow: 10px 10px 15px black;
+}
+
+}
+
+
+
+/**************************** 750px *******************************/
+
+@media only screen and (max-width: 750px){
+  .navigation{
+      flex-basis: 100%;
+      flex-direction: column;
+      font-size: 8px;
+      padding: 2px;
+  }
+
+  .navigation a {
+    padding: 15px;
+  }
+
+  .content-project {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr / 1fr;
+  }
+  .paragraf-prvi {
+    display: block;
+    margin-top: 4%;
+    margin-left: 2.5%;
+    padding-bottom: 0;
+    height: 40%;
+    max-width: 70%;
+    width: 70%;
+}
+
+
+.paragraf-prvi p {
+    grid-area: prvi;
+    line-height: 10px;
+    padding-top: 15px;
+    display: block;
+    margin-bottom: 0;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-family: 'Cousine', monospace;
+    font-size: 8px; 
+} 
+
+
+
+.img-kombi {
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-area: kombi;
+  height: 60%;
+  max-width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+
+.img-logo-web {
+  grid-area: logo;
+  display: block;
+  padding-bottom: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 90%;
+  max-width: 100%;
+}
+
+.paragraf-drugi  {
+  padding-left: 5%;
+  padding-right: 10%;
+  line-height: 10px;
+  grid-area: drugi;
+  padding-top: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Cousine', monospace;
+  font-style: italic;
+  font-size: 8px;
+  text-align: justify;
+}
+
+
+
+.wbrc-div {
+  grid-area: wbc;
+  padding-top: 40px;
+  max-width: 100%;
+  margin-bottom: 0;
+  margin-bottom: 0;
+  background-color: #f0f2f1;
+  height: 30px;
+  opacity: 0.7;
+}
+
+
+.wbrc-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 2.5%;
+  max-width: 100%;
+  font-family: 'Cousine', monospace;
+  font-size: 15px;
+  
+  
+}
+
+.content-gallery {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template: auto / repeat(4, 1fr);
+  margin-bottom: 10%;
+}
+
+.gallery-frame {
+  height: 40px;
+}
+
+.gallery-link:hover {
+  border-radius: 50%;
+}
+
+.gallery-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-image:hover {
+  opacity: 0.9;
+  box-shadow: 10px 10px 15px black;
+}
+
+}
